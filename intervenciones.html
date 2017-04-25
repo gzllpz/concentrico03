@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head lang="es">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>Festival Concéntrico 03</title>
+    <style>
+      body, html{
+        height: 100%;
+        border: 0;
+        padding: 0;
+        margin: 0;
+      }
+      #map{
+        width: 100%;
+        height: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="map"></div>
+  </body>
+  <script>
+    var iderioja_config = {
+      "capa_geojson": [
+        {"url": "https://raw.githubusercontent.com/gzllpz/concentrico03/master/concentrico_intervenciones.geojson",
+         "icono": {
+            "iconUrl": "https://raw.githubusercontent.com/gzllpz/concentrico03/master/logotipo_concentrico.png",
+            "iconSize": [20,20],
+            "iconAnchor": [10,10]
+         }
+        }
+      ],
+      "localizacion": 1,
+      "popup": 2
+    }
+  </script>
+  <script src="https://apigeo.larioja.org/v1/iderioja.js"></script>
+</html>
